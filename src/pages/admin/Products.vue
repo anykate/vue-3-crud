@@ -1,6 +1,11 @@
 <template>
   <div class="mt-2">
     <h1>Products</h1>
+    <router-link
+      :to="{ name: 'ProductCreate' }"
+      class="btn btn-outline-primary mt-2"
+      >Add Product</router-link
+    >
     <table class="table table-sm table-bordered my-4">
       <thead>
         <tr>
@@ -17,7 +22,7 @@
           <td>
             <img
               :src="product.image"
-              alt="product.title"
+              :alt="product.title"
               class="img-fluid"
               width="90"
             />
