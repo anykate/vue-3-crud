@@ -29,8 +29,8 @@
             <router-link
               class="nav-link"
               aria-current="page"
-              :to="{ name: 'Admin' }"
-              >Admin</router-link
+              :to="{ name: 'Products' }"
+              >Products</router-link
             >
           </li>
         </ul>

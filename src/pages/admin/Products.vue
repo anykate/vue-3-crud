@@ -28,22 +28,24 @@
             />
           </td>
           <td class="align-middle">
-            <div class="row">
-              <div class="col-md-6">
-                <router-link
-                  :to="{ name: 'ProductEdit', params: { id: product.id } }"
-                  class="h5"
-                  ><i class="bi bi-pencil"></i>
-                </router-link>
-              </div>
-              <div class="col-md-6 ps-1">
-                <button
-                  type="button"
-                  @click="delItem(product.id)"
-                  class="border-0 bg-transparent p-0 h5 text-danger"
-                >
-                  <i class="bi bi-x-circle"></i>
-                </button>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <router-link
+                    :to="{ name: 'ProductEdit', params: { id: product.id } }"
+                    class="h5"
+                    ><i class="bi bi-pencil"></i>
+                  </router-link>
+                </div>
+                <div class="col-md-6">
+                  <button
+                    type="button"
+                    @click="delItem(product.id)"
+                    class="border-0 bg-transparent p-0 h5 text-danger"
+                  >
+                    <i class="bi bi-x-circle"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </td>
