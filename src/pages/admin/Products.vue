@@ -6,13 +6,13 @@
       class="btn btn-outline-primary mt-2"
       >Add Product</router-link
     >
-    <table class="table table-sm table-bordered my-4">
+    <table class="table table-responsive table-sm table-bordered my-4">
       <thead>
         <tr>
           <th scope="col">#</th>
           <th scope="col">Title</th>
           <th scope="col">Image</th>
-          <th scope="col">Actions</th>
+          <th scope="col" class="text-center">Actions</th>
         </tr>
       </thead>
       <tbody>
@@ -27,13 +27,25 @@
               width="90"
             />
           </td>
-          <td colspan="2">
-            <button
-              @click="delItem(product.id)"
-              class="btn btn-sm btn-danger m-2"
-            >
-              Delete
-            </button>
+          <td class="align-middle">
+            <div class="row">
+              <div class="col-md-6">
+                <router-link
+                  :to="{ name: 'ProductEdit', params: { id: product.id } }"
+                  class="h5"
+                  ><i class="bi bi-pencil"></i>
+                </router-link>
+              </div>
+              <div class="col-md-6 ps-1">
+                <button
+                  type="button"
+                  @click="delItem(product.id)"
+                  class="border-0 bg-transparent p-0 h5 text-danger"
+                >
+                  <i class="bi bi-x-circle"></i>
+                </button>
+              </div>
+            </div>
           </td>
         </tr>
       </tbody>

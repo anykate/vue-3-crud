@@ -1,7 +1,7 @@
 <template>
   <div class="mt-2">
     <h1>Create Product</h1>
-    <form @submit.prevent="addItem" method="POST">
+    <form @submit.prevent="addItem">
       <div class="my-4">
         <input
           type="text"

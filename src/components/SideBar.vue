@@ -5,11 +5,6 @@
       <li>
         <router-link :to="{ name: 'ProductCreate' }">Add Product</router-link>
       </li>
-      <li>
-        <router-link :to="{ name: 'ProductEdit', params: { id: 3 } }"
-          >Edit Product</router-link
-        >
-      </li>
     </ul>
   </div>
 </template>
