@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-2">
     <h1>Create Product</h1>
   </div>
 </template>
