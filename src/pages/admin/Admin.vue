@@ -1,24 +1,24 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 ps-0">
-        <Sidebar />
-      </div>
-      <div class="col-md-9 pe-0">
-        <router-view />
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 ps-0">
+				<Sidebar />
+			</div>
+			<div class="col-md-9 pe-0">
+				<router-view />
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
-import Sidebar from '@/components/Sidebar'
+import Sidebar from '../../components/SideBar.vue'
 
 export default {
-  name: "Admin",
-  components: {
-    Sidebar
-  }
+	name: "Admin",
+	components: {
+		Sidebar
+	}
 }
 </script>
 
